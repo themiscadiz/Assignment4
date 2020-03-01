@@ -60,9 +60,7 @@
       #cat {
         font-size:2rem;
         width: 20%;
-        /* padding-top:4rem; */
-        /* padding-left: 1.5rem; */
-        /* padding-bottom: 1.5rem; */
+
         position: relative;
         height:45vh ;
         width: auto;
@@ -83,9 +81,7 @@
       #dog {
         font-size:2rem;
         width: 20%;
-        /* padding-top:4rem; */
-        /* padding-left: 1.5rem; */
-        /* padding-bottom: 1.5rem; */
+
         position: relative;
         height:45vh ;
         width: auto;
@@ -106,9 +102,7 @@
       #horse {
         font-size:2rem;
         width: 20%;
-        /* padding-top:4rem; */
-        /* padding-left: 1.5rem; */
-        /* padding-bottom: 1.5rem; */
+
         position: relative;
         height:45vh ;
         width: auto;
@@ -130,9 +124,7 @@
       #unicorn {
         font-size:2rem;
         width: 20%;
-        /* padding-top:4rem; */
-        /* padding-left: 1.5rem; */
-        /* padding-bottom: 1.5rem; */
+
         position: relative;
         height:45vh ;
         width: auto;
@@ -151,10 +143,7 @@
       
       #eagle {
         font-size:2rem;
-        /* width: 50%; */
-        /* padding-top:4rem; */
-        /* padding-left: 1.5rem; */
-        /* padding-bottom: 1.5rem; */
+
         position: relative;
         height:45vh ;
         width: auto;        
@@ -192,8 +181,7 @@
         padding:2rem;
   
         position: relative;
-        /* height:60vh ; */
-        /* width: auto;  */
+
 
       }
       ul {
@@ -206,8 +194,7 @@
             padding:2rem;
       
             position: relative;
-            /* height:60vh ; */
-            /* width: auto;  */
+
     
           }
           #horse__info {
@@ -216,8 +203,7 @@
             padding:2rem;
       
             position: relative;
-            /* height:60vh ; */
-            /* width: auto;  */
+
     
           }
 
@@ -227,8 +213,7 @@
             padding:2rem;
       
             position: relative;
-            /* height:60vh ; */
-            /* width: auto;  */
+
     
           }
           #eagle__info {
@@ -236,14 +221,9 @@
             width: 15%;
             padding:2rem;
       
-            position: relative;
-            /* height:60vh ; */
-            /* width: auto;  */
-    
+            position: relative;    
           }
-          /* li {
-              padding-bottom: 1.5rem;
-          } */
+
           #line {
               padding: 4rem;
           }
@@ -251,17 +231,6 @@
     </style>
         
     <script>
-        // const a = 1;
-        // const b = 2;
-        // console.log(`${a} + ${b} = ${a + b}`);
-
-        // const horoscope = require('horoscope');
-
-        // console.log(horoscope);
-
-        // console.log(horoscope.getSign({month: 9, day: 14 }))
-
-
 
         window.addEventListener('DOMContentLoaded', async () => {
 
@@ -273,97 +242,110 @@
         let voteDog= true; 
         let dogCount = 0;
 
-        let voteHorse= true; 
-        let horseCount = 0;
+        // let voteHorse= true; 
+        // let horseCount =0;
 
-        let voteUnicorn= true; 
-        let unicornCount = 0;
+        // let voteUnicorn= true; 
+        // let unicornCount = 0;
 
-        let voteEagle= true; 
-        let eagleCount = 0;
+        // let voteEagle= true; 
+        // let eagleCount = 0;
 
-        //const specialUrl ="curl --location --request GET 'localhost:3000/${value}"
         ///
-        const specialUrl = "http://localhost:3000/api/dog"
+        const specialUrlCat = "http://localhost:3000/api/cat"
+        // const specialUrlDog = "http://localhost:3000/api/dog"
+        // const specialUrlHorse = "http://localhost:3000/api/horse"
+        // const specialUrlUnicorn = "http://localhost:3000/api/unicorn"
+        // const specialUrlEagle = "http://localhost:3000/api/eagle"
+
         // define a custom function to wrap your await
         async function mySpecialRequest(url){
             try{
                 const data = await fetch(url);
                 const result = await data.json();
 
-                console.log(result);
+                // return result.message;
+
+                getVotes(result);
+
+               // console.log(result);
+
             } catch(err){
                 return err;
             }  
         }
+        async function getVotes(result){
+            console.log(result.message);
+            catCount = result.message;
 
+            showVotes = true; 
+            showAllVotes(showVotes); 
+        
+        }
         ///
 
         document.getElementById("cat").addEventListener("click", function addVoteCat(){
             
             if(voteCat){
-                catCount = catCount + 1; 
-                showVotes = true; 
-                showAllVotes(showVotes); 
+                mySpecialRequest(specialUrlCat)
             }
         });
         
-        document.getElementById("dog").addEventListener("click", function addVoteDog(){
-            if(voteDog){
-                dogCount = dogCount + 1; 
-                showVotes = true;  
-                showAllVotes(showVotes);  
+        // document.getElementById("dog").addEventListener("click", function addVoteDog(){
+        //     if(voteDog){
+        //         dogCount = dogCount + 1; 
+        //         showVotes = true;  
+        //         showAllVotes(showVotes);  
                 
-                // send GET request to server
-                // curl --location --request GET 'localhost:3000/api/dog
-                // call your function
-                mySpecialRequest(specialUrl)
-            }
-        });
+        //         mySpecialRequest(specialUrlDog)
+        //     }
+        // });
 
-        document.getElementById("horse").addEventListener("click", function addVoteHorse(){
-            if(voteHorse){
-                horseCount = horseCount + 1; 
-                showVotes = true;
-                showAllVotes(showVotes);    
+        // document.getElementById("horse").addEventListener("click", function addVoteHorse(){
+        //     if(voteHorse){
+        //         horseCount = horseCount + 1; 
+        //         showVotes = true;
+        //         showAllVotes(showVotes);    
                 
-                // 
-            }
-        });
+        //         // 
 
-        document.getElementById("unicorn").addEventListener("click", function addVoteUnicorn(){
-            if(voteUnicorn){
-                unicornCount = unicornCount + 1; 
-                showVotes = true; 
-                showAllVotes(showVotes);            
-            }
-        });
+        //         mySpecialRequest(specialUrlHorse)
+        //     }
+        // });
 
-        document.getElementById("eagle").addEventListener("click", function addVoteEagle(){
-            if(voteEagle){
-                eagleCount = eagleCount + 1; 
-                showVotes = true; 
-                showAllVotes(showVotes);            
-            }
-        });
+        // document.getElementById("unicorn").addEventListener("click", function addVoteUnicorn(){
+        //     if(voteUnicorn){
+        //         unicornCount = unicornCount + 1; 
+        //         showVotes = true; 
+        //         showAllVotes(showVotes);  
+                
+                
+        //         mySpecialRequest(specialUrlUnicorn)
+        //     }
+        // });
+
+        // document.getElementById("eagle").addEventListener("click", function addVoteEagle(){
+        //     if(voteEagle){
+        //         eagleCount = eagleCount + 1; 
+        //         showVotes = true; 
+        //         showAllVotes(showVotes);  
+                
+                
+
+        //         mySpecialRequest(specialUrlEagle)
+        //     }
+        // });
 
 
-
-
-        function showAllVotes(showVotes){
+        async function showAllVotes(showVotes){
         if(showVotes){
             document.getElementById("catNum").innerHTML = catCount;
-            document.getElementById("dogNum").innerHTML = dogCount;
-            document.getElementById("horseNum").innerHTML = horseCount;
-            document.getElementById("unicornNum").innerHTML = unicornCount;
-            document.getElementById("eagleNum").innerHTML = eagleCount;
+            // document.getElementById("dogNum").innerHTML = dogCount;
+            // document.getElementById("horseNum").innerHTML = horseCount;
+            // document.getElementById("unicornNum").innerHTML = unicornCount;
+            // document.getElementById("eagleNum").innerHTML = eagleCount;
                 }
             }
-
-
-
-
-
 })
 
     </script>
@@ -372,19 +354,19 @@
   </head>
   <body>
     <h1>What's Your Favorite Animal?</h1>
-    <p>Click on your favorite animal and we'll tell you popular is it!</p>
+    <p>Click on your favorite animal and we'll tell you how popular it is!</p>
     <section id = "animals">
         <div >
             <input type="image" id="cat" alt="Cat" value="animal_1"
        src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
         </div>
 
-        <div >
+        <!-- <div >
             <input type="image" id="dog" alt="dog" value="animal_2"
        src="https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=642&q=80">
-        </div>
+        </div> -->
 
-        <div >
+        <!-- <div >
             <input type="image" id="horse" alt="horse" value="animal_3"
        src="https://images.unsplash.com/photo-1496248594191-5ac06efa597a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80">
         </div>
@@ -395,10 +377,10 @@
         <div >
             <input type="image" id="eagle" alt="eagle" value="animal_5"
        src="https://images.unsplash.com/photo-1577064644172-6cf98e64d225?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=802&q=80">
-        </div>
+        </div> -->
     </section>
     <section>
-        <h2>How many votes has your favortite?</h2>
+        <h2>How many votes it has?</h2>
     </section>
 
     <section id = "info">
@@ -408,13 +390,13 @@
                 <li id = catNum value="1"></li>
             </ul>
         </div>
-        <div id = dog__info>
+        <!-- <div id = dog__info>
             <ul>
                 <li>Dogs</li>
                 <li id = dogNum value="1"></li>
             </ul>
-        </div>
-        <div id = horse__info>
+        </div> -->
+        <!-- <div id = horse__info>
             <ul>
                 <li>Horses</li>
                 <li id = horseNum value="1"></li>
@@ -431,7 +413,7 @@
                 <li>Bald Eagle</li>
                 <li id = eagleNum value="1"></li>
             </ul>
-        </div>    
+        </div>     -->
     </section>
 
     <div id = line >
