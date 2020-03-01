@@ -16,23 +16,35 @@ let horse = 0;
 let unicorn = 0;
 let eagle = 0;
 
-// var routerDog = express.Router();
-// app.get('/api/dog', (req, res) => res.json(
-//     [{message: dog++}]
-// ))
+var routerDog = express.Router();
+app.get('/api/dog', (req, res) => {
+    dog++;
+    res.json(
+        //[{message: dog}]
+        {message: dog}
+
+    )
+})
+
+app.post('/api/dog', (req, res) => res.json(
+    [{message: dog}]
+))
 
 var routerCat = express.Router();
 app.get('/api/cat', (req, res) => res.json(
     [{message: cat++}]
 ))
+
 var routerHorse = express.Router();
 app.get('/api/horse', (req, res) => res.json(
     [{message: horse++}]
 ))
+
 var routerUnicorn = express.Router();
 app.get('/api/unicorn', (req, res) => res.json(
     [{message: unicorn++}]
 ))
+
 var routerEagle = express.Router();
 app.get('/api/eagle', (req, res) => res.json(
     [{message: eagle++}]

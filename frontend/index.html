@@ -282,6 +282,23 @@
         let voteEagle= true; 
         let eagleCount = 0;
 
+        //const specialUrl ="curl --location --request GET 'localhost:3000/${value}"
+        ///
+        const specialUrl = "http://localhost:3000/api/dog"
+        // define a custom function to wrap your await
+        async function mySpecialRequest(url){
+            try{
+                const data = await fetch(url);
+                const result = await data.json();
+
+                console.log(result);
+            } catch(err){
+                return err;
+            }  
+        }
+
+        ///
+
         document.getElementById("cat").addEventListener("click", function addVoteCat(){
             
             if(voteCat){
@@ -294,9 +311,13 @@
         document.getElementById("dog").addEventListener("click", function addVoteDog(){
             if(voteDog){
                 dogCount = dogCount + 1; 
-
                 showVotes = true;  
-                showAllVotes(showVotes);           
+                showAllVotes(showVotes);  
+                
+                // send GET request to server
+                // curl --location --request GET 'localhost:3000/api/dog
+                // call your function
+                mySpecialRequest(specialUrl)
             }
         });
 
@@ -304,7 +325,9 @@
             if(voteHorse){
                 horseCount = horseCount + 1; 
                 showVotes = true;
-                showAllVotes(showVotes);             
+                showAllVotes(showVotes);    
+                
+                // 
             }
         });
 
@@ -336,6 +359,8 @@
             document.getElementById("eagleNum").innerHTML = eagleCount;
                 }
             }
+
+
 
 
 
