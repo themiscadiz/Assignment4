@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="stylesheet" type="text/css" href="./frontend/main.css" >
+    <script src="./frontend/file.js"></script> -->
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300);
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+      * {
+        padding: 0 0 0 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 16px;
+      }
+      body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: rgb(206, 203, 202);
+        text-align: center;
+
+      }
+
+      h1{
+        font-size:4rem;
+        padding: 3rem;
+
+      }
+
+
+      h2{
+        font-size:2rem;
+        padding: 1rem;
+      }
+
+      p{
+        font-size:1.5rem;
+        padding-bottom: 4rem;  
+      }
+
+
+      #animals {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0rem 0rem 0rem 0rem;
+        height: 55vh;
+        width: auto;
+      }
+
+      @media screen and (max-width: 700px) {
+        #animals {
+            flex-direction: column;
+            height: auto;
+        }
+      }
+
+      #cat {
+        font-size:2rem;
+        width: 20%;
+        /* padding-top:4rem; */
+        /* padding-left: 1.5rem; */
+        /* padding-bottom: 1.5rem; */
+        position: relative;
+        height:45vh ;
+        width: auto;
+           
+    }
+
+    #cat:hover {
+        height:55vh ;     
+    }
+    @media screen and (max-width: 700px) {
+        #cat  {
+        width: 100%;
+        padding: 0px;
+        height: 5vh;
+      }
+    }
+
+      #dog {
+        font-size:2rem;
+        width: 20%;
+        /* padding-top:4rem; */
+        /* padding-left: 1.5rem; */
+        /* padding-bottom: 1.5rem; */
+        position: relative;
+        height:45vh ;
+        width: auto;
+           
+    }
+
+    #dog:hover {
+        height:55vh ;     
+    }
+    @media screen and (max-width: 700px) {
+        #dog {
+        width: 100%;
+        padding: 0px;
+        height: 5vh;
+      }
+    }
+
+      #horse {
+        font-size:2rem;
+        width: 20%;
+        /* padding-top:4rem; */
+        /* padding-left: 1.5rem; */
+        /* padding-bottom: 1.5rem; */
+        position: relative;
+        height:45vh ;
+        width: auto;
+           
+    }
+
+    #horse:hover {
+        height:55vh ;     
+    }
+
+    @media screen and (max-width: 700px) {
+        #horse  {
+        width: 100%;
+        padding: 0px;
+        height: 5vh;
+      }
+    }
+
+      #unicorn {
+        font-size:2rem;
+        width: 20%;
+        /* padding-top:4rem; */
+        /* padding-left: 1.5rem; */
+        /* padding-bottom: 1.5rem; */
+        position: relative;
+        height:45vh ;
+        width: auto;
+           
+    }
+    #unicorn:hover {
+        height:55vh ;     
+    }
+    @media screen and (max-width: 700px) {
+        #unicorn  {
+        width: 100%;
+        padding: 0px;
+        height: 5vh;
+      }
+    }
+      
+      #eagle {
+        font-size:2rem;
+        /* width: 50%; */
+        /* padding-top:4rem; */
+        /* padding-left: 1.5rem; */
+        /* padding-bottom: 1.5rem; */
+        position: relative;
+        height:45vh ;
+        width: auto;        
+    }
+    #eagle:hover {
+        height:55vh ;     
+    }
+    @media screen and (max-width: 700px) {
+        #eagle  {
+        width: 100%;
+        padding: 0px;
+        height: 5vh;
+      }
+    }
+
+    #info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0rem 0rem 0rem 0rem;
+        height: 10vh;
+        width: auto;
+      }
+
+      @media screen and (max-width: 700px) {
+        #info {
+            flex-direction: column;
+            height: auto;
+        }
+      }
+
+      #cat__info {
+        font-size:2rem;
+        width: 15%;
+        padding:2rem;
+  
+        position: relative;
+        /* height:60vh ; */
+        /* width: auto;  */
+
+      }
+      ul {
+        list-style-type: none;
+        }
+
+        #dog__info {
+            font-size:2rem;
+            width: 15%;
+            padding:2rem;
+      
+            position: relative;
+            /* height:60vh ; */
+            /* width: auto;  */
+    
+          }
+          #horse__info {
+            font-size:2rem;
+            width: 15%;
+            padding:2rem;
+      
+            position: relative;
+            /* height:60vh ; */
+            /* width: auto;  */
+    
+          }
+
+          #unicorn__info {
+            font-size:2rem;
+            width: 15%;
+            padding:2rem;
+      
+            position: relative;
+            /* height:60vh ; */
+            /* width: auto;  */
+    
+          }
+          #eagle__info {
+            font-size:2rem;
+            width: 15%;
+            padding:2rem;
+      
+            position: relative;
+            /* height:60vh ; */
+            /* width: auto;  */
+    
+          }
+          /* li {
+              padding-bottom: 1.5rem;
+          } */
+          #line {
+              padding: 4rem;
+          }
+   
+    </style>
+        
+    <script>
+        // const a = 1;
+        // const b = 2;
+        // console.log(`${a} + ${b} = ${a + b}`);
+
+        // const horoscope = require('horoscope');
+
+        // console.log(horoscope);
+
+        // console.log(horoscope.getSign({month: 9, day: 14 }))
+
+
+
+        window.addEventListener('DOMContentLoaded', async () => {
+
+            
+        let showVotes = false;
+        let voteCat = true; 
+        let catCount = 0;
+
+        let voteDog= true; 
+        let dogCount = 0;
+
+        let voteHorse= true; 
+        let horseCount = 0;
+
+        let voteUnicorn= true; 
+        let unicornCount = 0;
+
+        let voteEagle= true; 
+        let eagleCount = 0;
+
+        document.getElementById("cat").addEventListener("click", function addVoteCat(){
+            
+            if(voteCat){
+                catCount = catCount + 1; 
+                showVotes = true; 
+                showAllVotes(showVotes); 
+            }
+        });
+        
+        document.getElementById("dog").addEventListener("click", function addVoteDog(){
+            if(voteDog){
+                dogCount = dogCount + 1; 
+
+                showVotes = true;  
+                showAllVotes(showVotes);           
+            }
+        });
+
+        document.getElementById("horse").addEventListener("click", function addVoteHorse(){
+            if(voteHorse){
+                horseCount = horseCount + 1; 
+                showVotes = true;
+                showAllVotes(showVotes);             
+            }
+        });
+
+        document.getElementById("unicorn").addEventListener("click", function addVoteUnicorn(){
+            if(voteUnicorn){
+                unicornCount = unicornCount + 1; 
+                showVotes = true; 
+                showAllVotes(showVotes);            
+            }
+        });
+
+        document.getElementById("eagle").addEventListener("click", function addVoteEagle(){
+            if(voteEagle){
+                eagleCount = eagleCount + 1; 
+                showVotes = true; 
+                showAllVotes(showVotes);            
+            }
+        });
+
+
+
+
+        function showAllVotes(showVotes){
+        if(showVotes){
+            document.getElementById("catNum").innerHTML = catCount;
+            document.getElementById("dogNum").innerHTML = dogCount;
+            document.getElementById("horseNum").innerHTML = horseCount;
+            document.getElementById("unicornNum").innerHTML = unicornCount;
+            document.getElementById("eagleNum").innerHTML = eagleCount;
+                }
+            }
+
+
+
+})
+
+    </script>
+
+    <title>What's Your Favorite Animal?</title>
+  </head>
+  <body>
+    <h1>What's Your Favorite Animal?</h1>
+    <p>Click on your favorite animal and we'll tell you popular is it!</p>
+    <section id = "animals">
+        <div >
+            <input type="image" id="cat" alt="Cat" value="animal_1"
+       src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
+        </div>
+
+        <div >
+            <input type="image" id="dog" alt="dog" value="animal_2"
+       src="https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=642&q=80">
+        </div>
+
+        <div >
+            <input type="image" id="horse" alt="horse" value="animal_3"
+       src="https://images.unsplash.com/photo-1496248594191-5ac06efa597a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80">
+        </div>
+        <div >
+            <input type="image" id="unicorn" alt="unicorn" value="animal_4"
+       src="https://images.unsplash.com/photo-1534823983341-d4e6e4aa046c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=702&q=80">
+        </div>
+        <div >
+            <input type="image" id="eagle" alt="eagle" value="animal_5"
+       src="https://images.unsplash.com/photo-1577064644172-6cf98e64d225?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=802&q=80">
+        </div>
+    </section>
+    <section>
+        <h2>How many votes has your favortite?</h2>
+    </section>
+
+    <section id = "info">
+        <div id = cat__info>
+            <ul>
+                <li>Cats</li>
+                <li id = catNum value="1"></li>
+            </ul>
+        </div>
+        <div id = dog__info>
+            <ul>
+                <li>Dogs</li>
+                <li id = dogNum value="1"></li>
+            </ul>
+        </div>
+        <div id = horse__info>
+            <ul>
+                <li>Horses</li>
+                <li id = horseNum value="1"></li>
+            </ul>
+        </div>
+        <div id = unicorn__info>
+            <ul>
+                <li>Unicorns</li>
+                <li id = unicornNum value="1"></li>
+            </ul>
+        </div>
+        <div id = eagle__info>
+            <ul>
+                <li>Bald Eagle</li>
+                <li id = eagleNum value="1"></li>
+            </ul>
+        </div>    
+    </section>
+
+    <div id = line >
+        <hr />
+    </div> 
+    <footer>
+        <p>Images from <a href="https://unsplash.com/">Unsplash</a></p>
+    </footer>
+  </body>
+</html>
