@@ -36,12 +36,7 @@ function updateVotes(){
 
 }
 
-// API code
-let dog = 0;
 let cat = getVotes();
-let horse = 0;
-let unicorn = 0;
-let eagle = 0;
 
 var routerCat = express.Router();
 app.get('/api/cat', (req, res) => {
@@ -66,54 +61,5 @@ app.put('/api/cat', (req, res) => {
     )
 })
 
-// var routerDog = express.Router();
-// app.get('/api/dog', (req, res) => {
-//     dog++;
-//     res.json(
-//         //[{message: dog}]
-//         {message: dog}
-//     )
-// })
-// app.post('/api/dog', (req, res) => res.json(
-//     [{message: dog}]
-// ))
-
-
-
-// var routerHorse = express.Router();
-// app.get('/api/horse', (req, res) => {
-//     horse++;
-//     res.json(
-//     {message: horse}
-// )
-//     })
-
-// var routerUnicorn = express.Router();
-// app.get('/api/unicorn', (req, res) => {
-//     unicorn++;
-//     res.json(
-//     {message: unicorn}
-// // )
-
-//     })
-
-
-// var routerEagle = express.Router();
-// app.get('/api/eagle', (req, res) => {
-// eagle++;
-// res.json(
-//     {message: eagle++}
-// )
-// })
-
-// var routerEagle = express.Router();
-// app.get('/api/eagle', (req, res) => res.json(
-//     [{message: eagle++}]
-// ))
-
 // Server start
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
-
-
-
-// curl --location --request GET 'localhost:3000/api/dog'

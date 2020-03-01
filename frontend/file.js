@@ -1,14 +1,3 @@
-// const a = 1;
-// const b = 2;
-// console.log(`${a} + ${b} = ${a + b}`);
-
-// const horoscope = require('horoscope');
-
-// console.log(horoscope);
-
-// console.log(horoscope.getSign({month: 9, day: 14 }))
-
-
 
 window.addEventListener('DOMContentLoaded', async () => {
 
