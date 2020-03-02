@@ -1,9 +1,9 @@
 <!-- Every README should start with an H1 -->
 # API_Assignment4 - Creating My Own API 
 <!-- A one sentence description of the project or assignment -->
-This is a project is the process to understant how to create my own API for a simple voting system. The person would click over their favorite animal, and after clicked over the image, the website would show how many clicks that animal recieve before. 
+This is a project is the process to understand how to create my own API for a simple voting system. The person would vote for an animal by clicking on the image, and the website shows how many votes that animal has. 
 
-In this website, I am only putting only one option of voting for a specific cat. The idea is to have a voting system were the person choose an animal and then were tell them how many votes has each animal.
+For now, there is only one option, the cat.
 
 ![img1](https://github.com/themiscadiz/Assignment4/blob/master/Images/16.png)
 
@@ -38,8 +38,6 @@ To locally host your website (in case of Mac):
 5. Type <pre><code>npm start</code>
 6. Server should launch, and you should see the correct ip address to navigate to. Something like this: **localhost:3000**  
 
-**Notes:** There a other ways to open a localhost. This is just my prefered method, because it automatically refreshes the website.
-
 ## Built with
 * [Nodejs](https://nodejs.org/en/)
 * [VS Code](https://code.visualstudio.com/)
@@ -52,34 +50,34 @@ To locally host your website (in case of Mac):
 
 <!-- For your assignments you might consider  -->
 # Notes & Process
-For this assigment I start watching a lot of videos and reading the class material to trying to understant what are the concepts that we were trying to understant and use for this week. Although that I was able to in a very basic way create an API and save the information into a json file, just to make it works was really challenging. This assignment had a lot of new concepts of programming for the web, a lot new use in the terminal, what create a confusing path around the assignment.
+I started by watching a lot of videos and reading the class material to try to understand the concepts that we were trying to use for this week. I was able to create an API and save the information into a json file, just to make it work, but it was extremely challenging. This assignment had a lot of new concepts of programming for the web, and a lot new things in the terminal. The assignment was very confusing.
 
-The original goal was to create a voting system, where a person can vote for its favorite animal. After vote the person can see what are the votes that each animal has.
+The original goal was to create a voting system, where a person can vote for their favorite animal. After vote the person can see what are the votes that each animal has.
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/10.png?raw=true)
 
-While I was undestanding and struggle through the process, I simplified the concept into just to vote for one animal (in this case the cat) and see how many vote has the cat accumulate.
+I was struggling to understand the process, so I simplified the concept to just to vote for one animal (in this case the cat) and see how many votes has the cat accumulated.
 
-In this way I was apble to concentrate into achieve to request the data from the JSON file, update the JSON File and update the information in the website.
+In this way I was apble to focus on requesting data from the JSON file, update the JSON File, and update the information on the website.
 
 ### Understanding Node.js
-I started this assignment following the Fondations Guide from the class. I was able to  understant how to interact with node through the terminal.
+Following the Foundations Guide from the class, I was able to  understand how to interact with node through the terminal.
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/1.png?raw=true)
 
-In my first attempt on this last week I was planning and starting to use the Horoscope.js npm. But while I was diving into the material, I noticed that i wasn't going to be able to explore the fundamentals concepts of this assignment. 
+In my first attempt, I started to use the Horoscope.js. But while I was diving into the material, I noticed that I actually wasn't going to explore the fundamentals concepts of this assignment. 
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/2.png?raw=true)
 
-However when I tried to started the assignment I needed help understanding how we interact with node js, it is not the typical way as js.... for me I get it more like a invisible, backend and that was I was only able to see it running in the terminal. Not as a console log on the browser.
+However, when I tried to start the assignment I realized I needed help understanding how to interact with node.js, it is not the typical way I have used js... after that, I understood it more as an invisible, backend that I was only able to see it running in the terminal. Not as a console log on the browser.
 
 ### Designing the website
-After I finally get the concept of the assignment. I started to design my website and decided to started form the frontend to the backend. In this process I sketched the design. Just at the end of the process I eliminate dthe other animal to vote to have a more design that complemet what I was able to make ot work.
+After I finally got the concept of the assignment. I started to design my website and decided to start with the frontend. I sketched the design. After simplifying, I eliminated the other animals, to focus on the basic functionailty.
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/1.gif?raw=true)
 
 ### Creating an API
-For creating the API was the most consumming part of the assignment.Even having the class material, I was hard to me to understand how to applyed it into my own goal. The challenges starting for even understanding were node runs and what libraries I needed to get the data.
+Creating the API was the most consumming part of the assignment.Even having the class material, I was hard to me to understand how to applyed it into my own goal. The challenges starting for even understanding were node runs and what libraries I needed to get the data.
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/4.png?raw=true)
 
 Another challenge was to access the frontend files. I tried to use <code> const indexLocation = path.join(__dirname + "/frontend/")</code> but didn't work as espected. I had to put the css and js code inside the html file to be readable.
