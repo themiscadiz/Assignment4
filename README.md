@@ -77,7 +77,7 @@ After I finally got the concept of the assignment. I started to design my websit
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/1.gif?raw=true)
 
 ### Creating an API
-Creating the API was the most consumming part of the assignment.Even having the class material, I was hard to me to understand how to applyed it into my own goal. The challenges starting for even understanding were node runs and what libraries I needed to get the data.
+Creating the API was the most time consumming part of the assignment. Even having the class material, it was hard for me to understand how to apply it into my own project. The challenges starting for even understanding were node runs and what libraries I needed to get the data.
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/4.png?raw=true)
 
 Another challenge was to access the frontend files. I tried to use <code> const indexLocation = path.join(__dirname + "/frontend/")</code> but didn't work as espected. I had to put the css and js code inside the html file to be readable.
@@ -86,38 +86,39 @@ From the beggining I was confused how to get the path to read the api numbers th
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/6.png?raw=true)
 
-However afeterr a lot of attempls a was able to listenen and see through the terminal the increasing value from the api/cat.
+However, after many attempts a was able to listen and see through the terminal the increasing value from the api/cat.
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/9.png?raw=true)
 
 
 ### Accesing the API
 
-After I was able to see the information updating in the server from the app.js, I started to tried to acces this information from the API (as last week assignment). Although I had difficulties I felt more conftoble for the similarities from last week assignment. 
+After I was able to see the information updating in the server from the app.js, I started to try to acces this information from the API (as last week assignment). Although I had difficulties I felt more confortable with the similarities from last week's assignment. 
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/14.png?raw=true)
 
-I was able to see the information updating in the website even when I refresh the site. However, when I close the server, the counter of votes started from 0, because I was not storing the information anywhere. Is becaues of this the importance of having a json database, to be able to store the information. 
+I was able to see the information updating in the website even when I refresh the site. However, when I close the server, the counter of votes started from 0, because I was not storing the information anywhere. Is because of this the importance of having a json database, to be able to store the information even if the server closes. 
 
 ### JSON database
 
-I created the json file (votes.json) to put the votes information and I prepopulated with a json object.In app.js I created a function with fs.library to acces the json file. In that way I was able to read the json file and write to it using those functions.
-in the funtion getVotes() I read the json file and return the votes value.
+I created the json file (votes.json) to put the votes information and I prepopulated with a json object. In app.js I created a function with fs.library to acces the json file. In that way, I was able to read the json file and write to it using those functions.
 
-In function updateVotes() I updated the cat variable, I created a new json object with the updated cat variable. And then I over write the object in the json file.
+In the function getVotes() I read the json file and return the votes value.
+
+In function updateVotes() I updated the cat variable, I created a new json object with the updated cat variable. And then I overwrite the object in the json file.
 
 To updated the cat variable with the last value of votes from the json file.
 <code> let cat = getVotes();</code>
 
-**In this gif I recorded when the json file is been updated by the backend when I clicked the image. Even if I refresh the website and the server, the counter of votes is going to show the quantity of vote accumulated.** Simple but super PROUD if this.
+**In this gif I recorded when the json file is been updated by the backend when I clicked the image. Even if I refresh the website and the server, the counter of votes is going to show the quantity of votes accumulated.** It's simple but I'm SUPER PROUD of this.
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/4.gif?raw=true)
 
-To see in more resolution heres is a [link to a video](https://github.com/themiscadiz/Assignment4/blob/master/Images/4.mov) 
+To see in better resolution, here's is a [link to a video](https://github.com/themiscadiz/Assignment4/blob/master/Images/4.mov) 
 
 
 ### Deploying to Glitch
-I wasn't able to deploy the assigment through Glitch. I tried change the http to https (and vice versa) and make sure that I was using <code> start: node app.js</code>, but didn't work. However when when I still have the server on, I see changes in the json file when I pressed through the Glitch site. I open the terminal on Glitch, but wasnt able to understand the errors that I recieved.
+I wasn't really able to deploy the assigment through Glitch. I tried change the http to https (and vice versa) and make sure that I was using <code> start: node app.js</code> in the package.json, but it still didn't work. However, when I still have the server on locally on my computer, I see changes in the json file when I pressed through the Glitch site. I was able to find and open the terminal in Glitch, but wasnt able to understand the errors that I recieved.
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/15.png?raw=true)
 
@@ -128,7 +129,7 @@ I wasn't able to deploy the assigment through Glitch. I tried change the http to
 
 ## Challenges, Struggles & Questions
 1. Understanding the nature of backend, node, and how to work with it.
-2. How to request the information of different votes from different animals? Do I have to used and asynf function in the <script> for each animal?
+2. How to request the information of different votes from different animals? Do I have to use an async function in the <script> for each animal?
 3. Deployment of website in Glitch
  
 
