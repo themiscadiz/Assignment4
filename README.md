@@ -80,24 +80,36 @@ After I finally get the concept of the assignment. I started to design my websit
 
 ### Creating an API
 For creating the API was the most consumming part of the assignment.Even having the class material, I was hard to me to understand how to applyed it into my own goal. The challenges starting for even understanding were node runs and what libraries I needed to get the data.
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/4.png?raw=true)
 
 Another challenge was to access the frontend files. I tried to use <code> const indexLocation = path.join(__dirname + "/frontend/")</code> but didn't work as espected. I had to put the css and js code inside the html file to be readable.
 
 From the beggining I was confused how to get the path to read the api numbers that I was putting from the server. For this I follow a Express website example using .Router()
-![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/4.png?raw=true)
+
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/6.png?raw=true)
 
 However afeterr a lot of attempls a was able to listenen and see through the terminal the increasing value from the api/cat.
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/9.png?raw=true)
-![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/6.png?raw=true)
 
 
 ### Accesing the API
 
+After I was able to see the information updating in the server from the app.js, I started to tried to acces this information from the API (as last week assignment). Although I had difficulties I felt more conftoble for the similarities from last week assignment. 
+
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/14.png?raw=true)
 
+I was able to see the information updating in the website even when I refresh the site. However, when I close the server, the counter of votes started from 0, because I was not storing the information anywhere. Is becaues of this the importance of having a json database, to be able to store the information. 
 
 ### JSON database
+
+I created the json file (votes.json) to put the votes information and I prepopulated with a json object.In app.js I created a function with fs.library to acces the json file. In that way I was able to read the json file and write to it using those functions.
+in the funtion getVotes() I read the json file and return the votes value.
+
+In function updateVotes() I updated the cat variable, I created a new json object with the updated cat variable. And then I over write the object in the json file.
+
+To updated the cat variable with the last value of votes from the json file.
+<code> let cat = getVotes();</code>
 
 **In this gif I recorded when the json file is been updated by the backend when I clicked the image. Even if I refresh the website and the server, the counter of votes is going to show the quantity of vote accumulated.** Simple but super PROUD if this.
 
@@ -129,6 +141,8 @@ I wasn't able to deploy the assigment through Glitch. I tried change the http to
 [Express - Router](https://expressjs.com/en/4x/api.html#router)
 
 [NPM](https://www.npmjs.com/)
+
+Cat picture from [Unspash](https://unsplash.com/s/photos/cat)
 
 Class Material
 
