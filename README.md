@@ -54,6 +54,13 @@ To locally host your website (in case of Mac):
 # Notes & Process
 
 ### Understanding Node.js
+For this assigment I start watching a lot of videos and reading the class material to trying to understant what are the concepts that we were trying to understant and use for this week. Although that I was ables to in a very basic way create and API ans save the information into a json file. barely i understood What I was doing. At first I was planing to use a the Horoscope.js npm but while I was diving into the material, I notice that i wasn't going to be able to explor some of the concept off the assignment. 
+
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/1.png?raw=true)
+
+I started this assignment following the Fondations Guide from the class. Iwas able to  understant how to interact with node through the terminal. However when I tried to started the assignment I wasnt able to see what I was trying to do. I needed help understanding how we interact with node js, it is not the typical way as js.... more like a invisible, backend and that was I was only able to seeit running in the terminal. Not as a console log on the browser.
+
+### Designing the website
 
 ### Creating an API
 
@@ -67,7 +74,7 @@ To locally host your website (in case of Mac):
 ### Deploying to Glitch
 
 
-![img](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/2.gif)
+
 
 ## Challenges & Struggles
 This project was very challenging being the first time that I attempted to use an API. The most challenging processes were: 
