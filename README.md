@@ -80,6 +80,9 @@ The concept of the website
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/1.gif?raw=true)
 
 ### Creating an API
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/4.png?raw=true)
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/9.png?raw=true)
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/6.png?raw=true)
 
 
 ### Accesing the API
