@@ -63,24 +63,31 @@ While I was undestanding and struggle through the process, I simplified the conc
 In this way I was apble to concentrate into achieve to request the data from the JSON file, update the JSON File and update the information in the website.
 
 ### Understanding Node.js
-While more I was reading I started notice that what I was planning to used 
-
-![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/2.png?raw=true)
-
-At first I was planing and starting to use the Horoscope.js npm. But while I was diving into the material, I noticed that i wasn't going to be able to explore the fundamentals concepts of this assignment. 
+I started this assignment following the Fondations Guide from the class. I was able to  understant how to interact with node through the terminal.
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/1.png?raw=true)
 
-I started this assignment following the Fondations Guide from the class. I was able to  understant how to interact with node through the terminal. However when I tried to started the assignment I needed help understanding how we interact with node js, it is not the typical way as js.... for me I get it more like a invisible, backend and that was I was only able to see it running in the terminal. Not as a console log on the browser.
+In my first attempt on this last week I was planning and starting to use the Horoscope.js npm. But while I was diving into the material, I noticed that i wasn't going to be able to explore the fundamentals concepts of this assignment. 
+
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/2.png?raw=true)
+
+However when I tried to started the assignment I needed help understanding how we interact with node js, it is not the typical way as js.... for me I get it more like a invisible, backend and that was I was only able to see it running in the terminal. Not as a console log on the browser.
 
 ### Designing the website
 After I finally get the concept of the assignment. I started to design my website and decided to started form the frontend to the backend. In this process I sketched the design. Just at the end of the process I eliminate dthe other animal to vote to have a more design that complemet what I was able to make ot work.
-The concept of the website
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/1.gif?raw=true)
 
 ### Creating an API
+For creating the API was the most consumming part of the assignment.Even having the class material, I was hard to me to understand how to applyed it into my own goal. The challenges starting for even understanding were node runs and what libraries I needed to get the data.
+
+Another challenge was to access the frontend files. I tried to use <code> const indexLocation = path.join(__dirname + "/frontend/")</code> but didn't work as espected. I had to put the css and js code inside the html file to be readable.
+
+From the beggining I was confused how to get the path to read the api numbers that I was putting from the server. For this I follow a Express website example using .Router()
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/4.png?raw=true)
+
+However afeterr a lot of attempls a was able to listenen and see through the terminal the increasing value from the api/cat.
+
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/9.png?raw=true)
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/6.png?raw=true)
 
@@ -111,7 +118,6 @@ I wasn't able to deploy the assigment through Glitch. I tried change the http to
 
 ## Challenges, Struggles & Questions
 1. Understanding the nature of backend, node, and how to work with it.
-1. Creating an interactive button
 2. How to request the information of different votes from different animals? Do I have to used and asynf function in the <script> for each animal?
 3. Deployment of website in Glitch
  
