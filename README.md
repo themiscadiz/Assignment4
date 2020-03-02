@@ -52,9 +52,22 @@ To locally host your website (in case of Mac):
 
 <!-- For your assignments you might consider  -->
 # Notes & Process
+For this assigment I start watching a lot of videos and reading the class material to trying to understant what are the concepts that we were trying to understant and use for this week. Although that I was able to in a very basic way create an API and save the information into a json file, just to make it works was really challenging. This assignment had a lot of new concepts of programming for the web, a lot new use in the terminal, what create a confusing path around the assignment.
+
+The original goal was to create a voting system, where a person can vote for its favorite animal. After vote the person can see what are the votes that each animal has.
+
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/10.png?raw=true)
+
+While I was undestanding and struggle through the process, I simplified the concept into just to vote for one animal (in this case the cat) and see how many vote has the cat accumulate.
+
+In this way I was apble to concentrate into achieve to request the data from the JSON file, update the JSON File and update the information in the website.
 
 ### Understanding Node.js
-For this assigment I start watching a lot of videos and reading the class material to trying to understant what are the concepts that we were trying to understant and use for this week. Although that I was ables to in a very basic way create and API ans save the information into a json file. barely i understood What I was doing. At first I was planing to use a the Horoscope.js npm but while I was diving into the material, I notice that i wasn't going to be able to explor some of the concept off the assignment. 
+While more I was reading I started notice that what I was planning to used 
+
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/2.png?raw=true)
+
+At first I was planing and starting to use the Horoscope.js npm. But while I was diving into the material, I noticed that i wasn't going to be able to explore the fundamentals concepts of this assignment. 
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/1.png?raw=true)
 
@@ -77,7 +90,7 @@ I started this assignment following the Fondations Guide from the class. Iwas ab
 
 
 ## Challenges & Struggles
-This project was very challenging being the first time that I attempted to use an API. The most challenging processes were: 
+1. Start to understand the nature of backend.
 1. Creating an interactive button
 2. Accesing the API data
 3. Understanding how to use: Deployment of website in Glitch
@@ -91,8 +104,11 @@ This project was very challenging being the first time that I attempted to use a
 <!-- References for resources and inspiration -->
 ## References
 [Express](https://expressjs.com/)
+
 [Express - Router](https://expressjs.com/en/4x/api.html#router)
+
 [NPM](https://www.npmjs.com/)
+
 Class Material
 
 ## Authors
