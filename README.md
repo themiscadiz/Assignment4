@@ -95,21 +95,20 @@ To see in more resolution heres is a [link to a video](https://github.com/themis
 
 
 ### Deploying to Glitch
+I wasn't able to deploy the assigment through Glitch. I tried change the http to https (and vice versa) and make sure that I was using npm start, but didn't work. However when when I still have the server on, I see changes in the json file when I pressed through the Glitch site. I open the terminal on Glitch, but wasnt able to understand the errors that I recieved.
+
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/15.png?raw=true)
+
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/4.gif?raw=true)
 
 
 
-
-## Challenges & Struggles
-1. Start to understand the nature of backend.
+## Challenges, Struggles & Questions
+1. Understanding the nature of backend, node, and how to work with it.
 1. Creating an interactive button
 2. How to request the information of different votes from different animals? Do I have to used and asynf function in the <script> for each animal?
-3. Understanding how to use: Deployment of website in Glitch
-
-
-<!-- Any questions you have -->
-## Questions
-1. 
-2. 
+3. Deployment of website in Glitch
+ 
 
 <!-- References for resources and inspiration -->
 ## References
