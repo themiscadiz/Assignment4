@@ -71,9 +71,13 @@ At first I was planing and starting to use the Horoscope.js npm. But while I was
 
 ![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/1.png?raw=true)
 
-I started this assignment following the Fondations Guide from the class. Iwas able to  understant how to interact with node through the terminal. However when I tried to started the assignment I wasnt able to see what I was trying to do. I needed help understanding how we interact with node js, it is not the typical way as js.... more like a invisible, backend and that was I was only able to seeit running in the terminal. Not as a console log on the browser.
+I started this assignment following the Fondations Guide from the class. I was able to  understant how to interact with node through the terminal. However when I tried to started the assignment I needed help understanding how we interact with node js, it is not the typical way as js.... for me I get it more like a invisible, backend and that was I was only able to see it running in the terminal. Not as a console log on the browser.
 
 ### Designing the website
+After I finally get the concept of the assignment. I started to design my website and decided to started form the frontend to the backend. In this process I sketched the design. Just at the end of the process I eliminate dthe other animal to vote to have a more design that complemet what I was able to make ot work.
+The concept of the website
+
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/1.gif?raw=true)
 
 ### Creating an API
 
@@ -82,6 +86,12 @@ I started this assignment following the Fondations Guide from the class. Iwas ab
 
 
 ### JSON database
+
+**In this gif I recorded when the json file is been updated by the backend when I clicked the image. Even if I refresh the website and the server, the counter of votes is going to show the quantity of vote accumulated.** Simple but super PROUD if this.
+
+![img](https://github.com/themiscadiz/Assignment4/blob/master/Images/4.gif?raw=true)
+
+To see in more resolution heres is a [link to a video](https://github.com/themiscadiz/Assignment4/blob/master/Images/4.mov) 
 
 
 ### Deploying to Glitch
@@ -92,7 +102,7 @@ I started this assignment following the Fondations Guide from the class. Iwas ab
 ## Challenges & Struggles
 1. Start to understand the nature of backend.
 1. Creating an interactive button
-2. Accesing the API data
+2. How to request the information of different votes from different animals? Do I have to used and asynf function in the <script> for each animal?
 3. Understanding how to use: Deployment of website in Glitch
 
 
